@@ -1,0 +1,14 @@
+project_id: "dummy-test-project-123"
+environment: "staging"
+
+managed_services:
+  - service: "Cloud SQL"
+    engine: "postgres"
+    version: "14.2"
+  
+  - service: "Google Kubernetes Engine"
+    cluster_version: "1.27.3-gke.100"
+    node_pools: "n2-standard-4"
+
+  - service: "Cloud Functions"
+    runtime: "nodejs18"
